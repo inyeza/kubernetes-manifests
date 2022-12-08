@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: springappdeployment
+  name: my-springapp
 spec:
   replicas: 2
   selector:
@@ -53,7 +53,7 @@ spec:
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: mongodbrs
+  name: db
 spec:
   selector:
     matchLabels:
